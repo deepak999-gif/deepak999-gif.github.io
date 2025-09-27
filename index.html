@@ -34,57 +34,54 @@
                 <div class="text-2xl font-bold text-white">
                     <a href="#">Desh Deepak Pal</a>
                 </div>
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#about" class="hover:text-cyan-400 transition-colors duration-300">About</a>
-                    <a href="#projects" class="hover:text-cyan-400 transition-colors duration-300">Projects</a>
-                    <a href="#blog" class="hover:text-cyan-400 transition-colors duration-300">Blog</a>
-                    <a href="#contact" class="hover:text-cyan-400 transition-colors duration-300">Contact</a>
+                <nav class="hidden md:flex space-x-6 items-center">
+                    <a href="#about" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">About</a>
+                    <a href="#projects" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Projects</a>
+                    <a href="#blog" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Blog</a>
+                    <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white py-2 px-4 rounded-lg text-sm font-semibold transition-transform duration-300 hover:scale-105">Contact</a>
                 </nav>
                 <div class="md:hidden">
                     <button id="mobile-menu-button" class="text-white focus:outline-none">
-                        <i class="fas fa-bars text-2xl"></i>
+                        <i class="fas fa-bars fa-lg"></i>
                     </button>
                 </div>
             </div>
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden mt-4">
-                <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-800 rounded">About</a>
-                <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-800 rounded">Projects</a>
-                <a href="#blog" class="block py-2 px-4 text-sm hover:bg-gray-800 rounded">Blog</a>
-                <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-800 rounded">Contact</a>
-            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900/90 backdrop-blur-sm">
+            <a href="#about" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">About</a>
+            <a href="#projects" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Projects</a>
+            <a href="#blog" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Blog</a>
+            <a href="#contact" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Contact</a>
         </div>
     </header>
 
+    <!-- Main Content -->
     <main class="pt-24">
 
         <!-- Hero Section -->
-        <section id="home" class="container mx-auto px-6 py-24 md:py-32">
+        <section id="home" class="container mx-auto px-6 py-16 fade-in-section">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 text-center md:text-left">
-                    <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">
-                        Hi, I'm <span class="text-cyan-400">Desh Deepak Pal</span>
+                    <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight">
+                        Hi, I'm Desh Deepak Pal
                     </h1>
-                    <p class="mt-4 text-lg text-gray-400">
-                        <!-- EDIT THIS: This is your brand tagline -->
-                        A Decision Scientist driving business growth through data-driven strategy and insights.
+                    <p class="text-xl text-cyan-400 mt-2 font-semibold">A Decision Scientist for Business Growth</p>
+                    <p class="mt-4 text-gray-300 max-w-lg">
+                        I turn complex data into clear, actionable strategies that drive business success.
                     </p>
-                    <div class="mt-8 space-x-4">
+                    <div class="mt-8">
                         <a href="#projects" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105">
                             View My Work
-                        </a>
-                        <a href="#contact" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105">
-                            Get In Touch
                         </a>
                     </div>
                 </div>
                 <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
-                    <!-- I've changed object-cover to object-contain and added a background color to prevent cropping -->
-                    <img src="pofile.png" alt="Desh Deepak Pal" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-contain bg-gray-800 border-4 border-gray-700 shadow-lg" onerror="this.onerror=null; this.src='https://placehold.co/400x400/1e293b/94a3b8?text=Desh\nDeepak\nPal';">
+                    <!-- FIXED: The src now correctly points to profile.png as seen in your GitHub repository -->
+                    <img src="profile.png" alt="Desh Deepak Pal" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-contain bg-gray-800 border-4 border-gray-700 shadow-lg" onerror="this.onerror=null; this.src='https://placehold.co/400x400/1e293b/94a3b8?text=Desh\nDeepak\nPal';">
                 </div>
             </div>
         </section>
-        
 
         <!-- About Me Section -->
         <section id="about" class="bg-gray-800 py-20 fade-in-section">
@@ -93,7 +90,7 @@
                 <div class="max-w-3xl mx-auto text-center text-gray-300">
                     <!-- EDIT THIS: Write a paragraph or two about yourself. -->
                     <p class="text-lg mb-6">
-                        Hello! I'm a Decision Scientist passionate about bridging the gap between raw data and strategic business outcomes. I specialize in translating complex datasets into actionable insights that empower organizations to make smarter, more informed decisions. 
+                        Hello! I'm a Decision Scientist passionate about bridging the gap between raw data and strategic business outcomes. I specialize in translating complex datasets into actionable insights that empower organizations to make smarter, more informed decisions.
                     </p>
                     <p class="text-lg">
                         My goal is to help businesses navigate uncertainty and find opportunities for growth by leveraging statistical analysis, machine learning, and a deep understanding of business context.
@@ -120,7 +117,7 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center text-white mb-12">Case Studies & Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    
+
                     <!-- Project Card 1: EDIT THIS -->
                     <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
                         <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Customer+Churn" alt="Customer Churn Prediction" class="w-full h-56 object-cover">
@@ -146,7 +143,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Project Card 3: EDIT THIS -->
                     <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
                         <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Marketing+ROI" alt="Marketing ROI Analysis" class="w-full h-56 object-cover">
@@ -169,7 +166,7 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center text-white mb-12">Latest Articles & Thoughts</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    
+
                     <!-- Blog Post 1: EDIT THIS -->
                     <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
                         <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Blog+Post+One" alt="Blog Post 1" class="w-full h-56 object-cover">
@@ -189,7 +186,7 @@
                             <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">Read More &rarr;</a>
                         </div>
                     </div>
-                    
+
                     <!-- Blog Post 3: EDIT THIS -->
                     <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
                         <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Blog+Post+Three" alt="Blog Post 3" class="w-full h-56 object-cover">
@@ -212,7 +209,7 @@
                     I am always interested in discussing new projects and opportunities. If you're looking for a data-driven perspective, let's talk about how I can help your business.
                 </p>
                 <!-- EDIT THIS: Replace with your email address -->
-                <a href="hh" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-4 px-8 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105 text-lg">
+                <a href="mailto:your-email@example.com" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-4 px-8 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105 text-lg">
                     Email Me
                 </a>
                 <div class="mt-12 flex justify-center space-x-6">
