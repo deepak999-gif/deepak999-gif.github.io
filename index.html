@@ -61,24 +61,24 @@
 
         <!-- Hero Section -->
         <section id="home" class="container mx-auto px-6 py-16 fade-in-section">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 text-center md:text-left">
+            <!-- The order of columns is swapped, and styling is updated to match the reference image -->
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <!-- Image on the left -->
+                <div class="md:w-1/2">
+                    <!-- FIXED: The src now correctly points to your new image, profile.jpeg -->
+                    <img src="profile.jpeg" alt="Desh Deepak Pal" class="rounded-lg shadow-2xl w-full" onerror="this.onerror=null; this.src='https.onerror=null; this.src='https://placehold.co/600x400/1e293b/94a3b8?text=Image+of\nDesh+Deepak+Pal';';">
+                </div>
+                <!-- Text on the right, inside a styled box -->
+                <div class="md:w-1/2 text-center bg-gray-800/50 rounded-lg p-8 md:p-12">
                     <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight">
-                        Hi, I'm Desh Deepak Pal
+                        Driving Decisions with Data
                     </h1>
-                    <p class="text-xl text-cyan-400 mt-2 font-semibold">A Decision Scientist for Business Growth</p>
-                    <p class="mt-4 text-gray-300 max-w-lg">
-                        I turn complex data into clear, actionable strategies that drive business success.
-                    </p>
+                    <p class="text-xl text-cyan-400 mt-2 font-semibold">Desh Deepak Pal - Decision Scientist</p>
                     <div class="mt-8">
-                        <a href="#projects" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105">
-                            View My Work
+                        <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105">
+                            Let's Connect
                         </a>
                     </div>
-                </div>
-                <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
-                    <!-- FIXED: The src now correctly points to profile.png as seen in your GitHub repository -->
-                    <img src="profile.png" alt="Desh Deepak Pal" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-contain bg-gray-800 border-4 border-gray-700 shadow-lg" onerror="this.onerror=null; this.src='https://placehold.co/400x400/1e293b/94a3b8?text=Desh\nDeepak\nPal';">
                 </div>
             </div>
         </section>
