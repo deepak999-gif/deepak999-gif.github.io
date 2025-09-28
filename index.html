@@ -23,7 +23,7 @@
             opacity: 1;
             transform: translateY(0);
         }
-        /* NEW: Styles for the background video */
+        /* Styles for the background video */
         .hero-video-container {
             position: absolute;
             top: 0;
@@ -99,6 +99,7 @@
                 <div class="flex flex-col md:flex-row items-center gap-8">
                     <!-- Image on the left -->
                     <div class="md:w-1/2">
+                        <!-- FIXED: Corrected the syntax error in the 'onerror' attribute -->
                         <img src="profile.jpeg" alt="Desh Deepak Pal" class="rounded-lg shadow-2xl w-full max-w-md mx-auto" onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/94a3b8?text=Image+of\nDesh+Deepak+Pal';">
                     </div>
                     <!-- Text on the right -->
@@ -115,6 +116,11 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- NEW: Unmute Button -->
+            <button id="unmute-button" class="absolute bottom-5 right-5 z-30 text-white bg-black/40 backdrop-blur-sm p-3 rounded-full hover:bg-black/60 transition-colors focus:outline-none">
+                <i class="fas fa-volume-mute fa-lg"></i>
+            </button>
         </section>
 
         <!-- About Me Section -->
@@ -293,6 +299,26 @@
         sections.forEach(section => {
             observer.observe(section);
         });
+
+        // NEW: Unmute button functionality
+        const video = document.getElementById('hero-video');
+        const unmuteButton = document.getElementById('unmute-button');
+        if (unmuteButton && video) {
+            const unmuteIcon = unmuteButton.querySelector('i');
+            
+            unmuteButton.addEventListener('click', () => {
+                if (video.muted) {
+                    video.muted = false;
+                    unmuteIcon.classList.remove('fa-volume-mute');
+                    unmuteIcon.classList.add('fa-volume-up');
+                } else {
+                    video.muted = true;
+                    unmuteIcon.classList.remove('fa-volume-up');
+                    unmuteIcon.classList.add('fa-volume-mute');
+                }
+            });
+        }
     </script>
 </body>
 </html>
+
