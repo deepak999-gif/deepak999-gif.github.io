@@ -261,30 +261,33 @@
             </div>
         </section>
 
-        <!-- Glimpses Section -->
+       <!-- Glimpses Section -->
 <section id="glimpses" class="py-20 fade-in-section">
     <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold text-center text-white mb-12">Glimpses of My Talks</h2>
-        <!-- Using a more flexible grid that works better for mixed video orientations -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+        <!-- A simple 3-column grid for a balanced, professional look -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-            <!-- Glimpse 1 (Spans two columns to appear larger) -->
-            <div class="bg-gray-800 rounded-lg p-4 col-span-2">
-                <div class="rounded-lg overflow-hidden h-full">
+            <!-- Glimpse 1 (Muted Autoplay) -->
+            <div class="bg-gray-800 rounded-lg p-4">
+                <!-- This container forces a vertical (9:16) aspect ratio -->
+                <div class="aspect-w-9 aspect-h-16 rounded-lg overflow-hidden">
                     <video autoplay loop muted playsinline class="w-full h-full object-cover" src="glimpse1.mp4"></video>
                 </div>
             </div>
 
-            <!-- Glimpse 2 (Vertical Video) -->
+            <!-- Glimpse 2 (Standard with controls) -->
             <div class="bg-gray-800 rounded-lg p-4">
-                <div class="rounded-lg overflow-hidden h-full">
+                <!-- This container forces a vertical (9:16) aspect ratio -->
+                <div class="aspect-w-9 aspect-h-16 rounded-lg overflow-hidden">
                     <video controls class="w-full h-full object-cover" src="glimpse2.mp4"></video>
                 </div>
             </div>
 
-            <!-- Glimpse 3 (Vertical Video) -->
+            <!-- Glimpse 3 (Standard with controls) -->
             <div class="bg-gray-800 rounded-lg p-4">
-                <div class="rounded-lg overflow-hidden h-full">
+                <!-- This container forces a vertical (9:16) aspect ratio -->
+                <div class="aspect-w-9 aspect-h-16 rounded-lg overflow-hidden">
                     <video controls class="w-full h-full object-cover" src="glimpse3.mp4"></video>
                 </div>
             </div>
@@ -292,6 +295,7 @@
         </div>
     </div>
 </section>
+
 
 
         <!-- Complimentary Talk Section -->
