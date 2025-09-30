@@ -3,14 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO Meta Tags - Helps Google understand your page -->
+    <!-- SEO Meta Tags -->
     <title>Desh Deepak Pal - Decision Scientist | IIT Patna</title>
-    <meta name="description" content="Personal portfolio for Desh Deepak Pal, a Decision Scientist specializing in data analysis, machine learning, and business strategy. An IIT Patna graduate helping businesses translate data into profit.">
+    <meta name="description" content="Personal portfolio for Desh Deepak Pal, a Decision Scientist from IIT Patna specializing in data analysis, machine learning, and business strategy. I help businesses turn data into profit.">
     <meta name="keywords" content="Desh Deepak Pal, Decision Scientist, Data Scientist, Data Analysis, Machine Learning, Business Intelligence, Python, SQL, IIT Patna">
-    <!-- End of SEO Meta Tags -->
-
-    <!-- Add your Google Site Verification tag here when you get it -->
+    <!-- Google Site Verification Tag -->
     <meta name="google-site-verification" content="bvdoYWljfSyrWaIyzsJ1rmN--4OW0XQJVH4-9jVSnCA" />
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,7 +19,15 @@
         body {
             font-family: 'Inter', sans-serif;
         }
-        /* Styles for the background video */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
         #hero-video-container {
             position: absolute;
             top: 0;
@@ -37,16 +42,6 @@
             height: 100%;
             object-fit: cover;
         }
-        /* Simple animation for section fade-in */
-        .fade-in-section {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-        .fade-in-section.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-200">
@@ -55,16 +50,18 @@
     <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-gray-700">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-2xl font-bold text-white">
+                <div class="text-xl font-bold text-white">
                     <a href="#">Desh Deepak Pal</a>
                 </div>
-                <nav class="hidden md:flex space-x-6 items-center">
+                <nav class="hidden md:flex space-x-4 items-center text-sm">
                     <a href="#about" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">About</a>
                     <a href="#services" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Services</a>
                     <a href="#case-studies" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Case Studies</a>
+                    <a href="#philosophy" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Philosophy</a>
+                    <a href="#glimpses" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Glimpses</a>
                     <a href="#talks" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Talks</a>
                     <a href="#blog" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Blog</a>
-                    <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white py-2 px-4 rounded-lg text-sm font-semibold transition-transform duration-300 hover:scale-105">Contact</a>
+                    <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white py-2 px-4 rounded-lg font-semibold transition-transform duration-300 hover:scale-105">Contact</a>
                 </nav>
                 <div class="md:hidden">
                     <button id="mobile-menu-button" class="text-white focus:outline-none">
@@ -78,6 +75,8 @@
             <a href="#about" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">About</a>
             <a href="#services" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Services</a>
             <a href="#case-studies" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Case Studies</a>
+            <a href="#philosophy" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Philosophy</a>
+            <a href="#glimpses" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Glimpses</a>
             <a href="#talks" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Talks</a>
             <a href="#blog" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Blog</a>
             <a href="#contact" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Contact</a>
@@ -86,6 +85,7 @@
 
     <!-- Main Content -->
     <main>
+
         <!-- Hero Section with Video Background -->
         <section id="home" class="relative min-h-screen flex items-center justify-center fade-in-section">
             <div id="hero-video-container">
@@ -101,12 +101,10 @@
                         <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight">
                             You Have the Data. You Have the Team. Let's Build the Strategy.
                         </h1>
-                        <p class="text-lg text-cyan-400 mt-4 font-semibold">Desh Deepak Pal - Decision Scientist, Graduating from IIT Patna</p>
-                        <p class="mt-4 text-gray-300">I help businesses translate data into profit by bridging the gap between your tech team and your stakeholders.</p>
+                        <p class="text-xl text-cyan-400 mt-4 font-semibold">Desh Deepak Pal - Decision Scientist, IIT Patna</p>
+                        <p class="mt-4 text-gray-300 max-w-lg mx-auto">I help businesses translate data into profit by bridging the gap between your tech team and your stakeholders.</p>
                         <div class="mt-8">
-                            <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105">
-                                Start a Conversation
-                            </a>
+                            <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105">Start a Conversation</a>
                         </div>
                     </div>
                 </div>
@@ -121,12 +119,8 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center text-white mb-12">About Me</h2>
                 <div class="max-w-3xl mx-auto text-center text-gray-300">
-                    <p class="text-lg mb-6">
-                        Hello! I'm a Decision Scientist, currently completing my graduation from the prestigious IIT Patna. I am passionate about bridging the gap between raw data and strategic business outcomes. I specialize in translating complex datasets into actionable insights that empower organizations to make smarter, more informed decisions.
-                    </p>
-                    <p class="text-lg">
-                        My goal is to help businesses navigate uncertainty and find opportunities for growth by leveraging statistical analysis, machine learning, and a deep understanding of business context.
-                    </p>
+                    <p class="text-lg mb-6">Hello! I'm a Decision Scientist and a proud graduate of IIT Patna, passionate about bridging the gap between raw data and strategic business outcomes. I specialize in translating complex datasets into actionable insights that empower organizations to make smarter, more informed decisions.</p>
+                    <p class="text-lg">My goal is to help businesses navigate uncertainty by leveraging statistical analysis, machine learning, and a deep understanding of business context.</p>
                 </div>
                 <div class="mt-12 text-center">
                     <h3 class="text-2xl font-semibold text-white mb-6">My Skills</h3>
@@ -147,22 +141,22 @@
         <section id="services" class="py-20 fade-in-section">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center text-white mb-2">Services & Collaboration</h2>
-                <p class="text-lg text-center text-gray-400 mb-12 max-w-3xl mx-auto">I help businesses solve complex problems and uncover opportunities through data. If you're facing a challenge or want to unlock the potential of your data, I can help.</p>
+                <p class="text-lg text-center text-gray-400 mb-12 max-w-3xl mx-auto">I help businesses solve complex problems and uncover opportunities through data. Here’s how we can work together:</p>
                 <div class="grid md:grid-cols-3 gap-8 text-center max-w-5xl mx-auto">
                     <div class="bg-gray-800 p-8 rounded-lg">
-                        <div class="text-4xl text-cyan-400 mb-4"><i class="fas fa-magnifying-glass-chart"></i></div>
+                        <i class="fas fa-chart-line fa-3x text-cyan-400 mb-4"></i>
                         <h3 class="text-xl font-bold text-white mb-2">Data Strategy Consulting</h3>
                         <p class="text-gray-400">Helping you define the right questions and create a roadmap to turn your data into a strategic asset.</p>
                     </div>
                     <div class="bg-gray-800 p-8 rounded-lg">
-                        <div class="text-4xl text-cyan-400 mb-4"><i class="fas fa-brain"></i></div>
-                        <h3 class="text-xl font-bold text-white mb-2">Predictive Modeling</h3>
-                        <p class="text-gray-400">Building and implementing machine learning models to forecast trends, predict customer behavior, and optimize operations.</p>
+                        <i class="fas fa-cogs fa-3x text-cyan-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Model Implementation & Review</h3>
+                        <p class="text-gray-400">Working with your tech team to translate business needs into technical specifications and ensure models are built for impact.</p>
                     </div>
                     <div class="bg-gray-800 p-8 rounded-lg">
-                        <div class="text-4xl text-cyan-400 mb-4"><i class="fas fa-presentation-screen"></i></div>
-                        <h3 class="text-xl font-bold text-white mb-2">Insight Communication</h3>
-                        <p class="text-gray-400">Translating complex analysis into clear, compelling stories that empower your stakeholders to make confident decisions.</p>
+                        <i class="fas fa-users fa-3x text-cyan-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Stakeholder Communication</h3>
+                        <p class="text-gray-400">Translating complex findings into clear, concise stories that business leaders can use to make confident decisions.</p>
                     </div>
                 </div>
             </div>
@@ -173,7 +167,6 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center text-white mb-12">What People Are Saying</h2>
                 <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    <!-- Testimonial Card 1: Placeholder -->
                     <div class="bg-gray-900 rounded-lg p-8">
                         <p class="text-gray-300 italic mb-6">"Desh has a unique ability to translate complex data into a clear strategic path. His workshop was the catalyst we needed to start making smarter, data-informed decisions."</p>
                         <div class="flex items-center">
@@ -184,7 +177,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Testimonial Card 2: Placeholder -->
                     <div class="bg-gray-900 rounded-lg p-8">
                         <p class="text-gray-300 italic mb-6">"The 'Data to Decision' framework was a game-changer for our engineering team. We now think about business impact first, which has completely changed how we approach our projects."</p>
                         <div class="flex items-center">
@@ -204,7 +196,6 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center text-white mb-12">Case Studies</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Project Card 1: EDIT THIS -->
                     <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
                         <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Customer+Churn" alt="Customer Churn Prediction" class="w-full h-56 object-cover">
                         <div class="p-6">
@@ -213,7 +204,6 @@
                             <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">Read Case Study &rarr;</a>
                         </div>
                     </div>
-                    <!-- Project Card 2: EDIT THIS -->
                     <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
                         <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Sales+Forecast" alt="Sales Forecast Analysis" class="w-full h-56 object-cover">
                         <div class="p-6">
@@ -222,7 +212,6 @@
                             <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">Read Case Study &rarr;</a>
                         </div>
                     </div>
-                    <!-- Project Card 3: EDIT THIS -->
                     <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
                         <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Marketing+ROI" alt="Marketing ROI Analysis" class="w-full h-56 object-cover">
                         <div class="p-6">
@@ -235,59 +224,83 @@
             </div>
         </section>
 
-        <!-- Decision-Making Philosophy Section -->
+        <!-- My Decision-Making Philosophy Section -->
         <section id="philosophy" class="bg-gray-800 py-20 fade-in-section">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-white mb-12">My Decision-Making Philosophy</h2>
+                <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <div class="flex flex-col items-center">
+                        <div class="bg-gray-900 rounded-full w-24 h-24 flex items-center justify-center border-4 border-cyan-400">
+                            <span class="text-3xl font-bold text-cyan-400">1</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mt-6 mb-2">Clarity Over Complexity</h3>
+                        <p class="text-gray-400">The goal is not to build the most complex model, but to find the simplest path to a clear, actionable insight.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-gray-900 rounded-full w-24 h-24 flex items-center justify-center border-4 border-cyan-400">
+                            <span class="text-3xl font-bold text-cyan-400">2</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mt-6 mb-2">Strategy Before Science</h3>
+                        <p class="text-gray-400">We start with the business objective, not the data. The strategy dictates the analysis, not the other way around.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-gray-900 rounded-full w-24 h-24 flex items-center justify-center border-4 border-cyan-400">
+                            <span class="text-3xl font-bold text-cyan-400">3</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mt-6 mb-2">Action, Not Just Analysis</h3>
+                        <p class="text-gray-400">An insight is only valuable if it leads to a decision. My work ends not with a report, but with a recommended action.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Glimpses Section -->
+        <section id="glimpses" class="py-20 fade-in-section">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center text-white mb-12">My Decision-Making Philosophy</h2>
-                <div class="grid md:grid-cols-3 gap-8 text-center max-w-5xl mx-auto">
-                    <div class="bg-gray-900 p-8 rounded-lg">
-                        <div class="text-4xl text-cyan-400 mb-4">1</div>
-                        <h3 class="text-xl font-bold text-white mb-2">Start with 'Why'</h3>
-                        <p class="text-gray-400">Every analysis begins not with data, but with a deep understanding of the business problem. We define the critical question first to ensure the insights will be actionable.</p>
+                <h2 class="text-3xl font-bold text-center text-white mb-12">Glimpses of My Talks</h2>
+                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="bg-gray-800 rounded-lg p-4">
+                        <div class="rounded-lg overflow-hidden">
+                            <video autoplay loop muted playsinline class="w-full h-full object-cover" src="glimpse1.mp4"></video>
+                        </div>
                     </div>
-                    <div class="bg-gray-900 p-8 rounded-lg">
-                        <div class="text-4xl text-cyan-400 mb-4">2</div>
-                        <h3 class="text-xl font-bold text-white mb-2">Translate Complexity into Clarity</h3>
-                        <p class="text-gray-400">My role is to be a translator. I turn complex statistical models and technical results into a clear, simple story that stakeholders can understand and act upon with confidence.</p>
+                    <div class="bg-gray-800 rounded-lg p-4">
+                        <div class="rounded-lg overflow-hidden">
+                            <video controls class="w-full h-full object-cover" src="glimpse2.mp4"></video>
+                        </div>
                     </div>
-                    <div class="bg-gray-900 p-8 rounded-lg">
-                        <div class="text-4xl text-cyan-400 mb-4">3</div>
-                        <h3 class="text-xl font-bold text-white mb-2">Measure What Matters</h3>
-                        <p class="text-gray-400">Success is not a technically perfect model; it's a measurable business outcome. Every project is tied to a key performance indicator (KPI) to ensure a direct line to profit and growth.</p>
+                    <div class="bg-gray-800 rounded-lg p-4">
+                        <div class="rounded-lg overflow-hidden">
+                            <video controls class="w-full h-full object-cover" src="glimpse3.mp4"></video>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Complimentary Talk Section -->
-        <section id="talks" class="py-20 fade-in-section">
+        <section id="talks" class="bg-gray-800 py-20 fade-in-section">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl font-bold text-white mb-4">Shareable Insights: A Complimentary Talk for Your Team</h2>
-                <p class="text-lg text-gray-400 max-w-3xl mx-auto mb-8">
-                    I offer a complimentary 60-minute talk, "From Data to Decision: A Practical Framework," for a select number of companies. This is a focused, educational session designed to add immediate value to your data or engineering teams. In-person sessions are available for local companies, with virtual options for teams elsewhere.
-                </p>
-                <a href="#contact" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105">
-                    Inquire About a Talk
-                </a>
+                <p class="text-lg text-gray-400 mb-8 max-w-3xl mx-auto">I offer a complimentary 60-minute session for businesses titled "From Data to Decision: A Practical Framework." It's a non-promotional, educational talk designed to provide immediate value to your tech, data, or leadership teams. In-person for local companies, virtual for all.</p>
+                <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105">Inquire About a Talk</a>
             </div>
         </section>
-        
+
         <!-- Blog Section -->
-        <section id="blog" class="bg-gray-800 py-20 fade-in-section">
+        <section id="blog" class="py-20 fade-in-section">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center text-white mb-12">Latest Articles & Thoughts</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Blog Post 1: EDIT THIS -->
-                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
                         <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Blog+Post+One" alt="Blog Post 1" class="w-full h-56 object-cover">
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">Core Intuition And Mathematical Derivation Of Decision Trees</h3>
+                            <h3 class="text-xl font-bold text-white mb-2">Core Intuition Of Decision Trees</h3>
                             <p class="text-gray-400 mb-4">This Blog Is About Decision Tree. A Colab Notebook And My Video Link Is Also Mentioned In The Blog To Give More Better Understanding.</p>
-                            <a href="https://medium.com/@desh_24a12res224/decision-trees-dividing-data-into-regions-947c9b82d142" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 font-semibold">Read More &rarr;</a>
+                            <a href="https://medium.com/@desh_24a12res224/decision-trees-dividing-data-into-regions-947c9b82d142" class="text-cyan-400 hover:text-cyan-300 font-semibold">Read More &rarr;</a>
                         </div>
                     </div>
-                    <!-- Blog Post 2: EDIT THIS -->
-                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
                         <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Blog+Post+Two" alt="Blog Post 2" class="w-full h-56 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-white mb-2">A Beginner's Guide to A/B Testing</h3>
@@ -295,8 +308,7 @@
                             <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">Read More &rarr;</a>
                         </div>
                     </div>
-                    <!-- Blog Post 3: EDIT THIS -->
-                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
                         <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Blog+Post+Three" alt="Blog Post 3" class="w-full h-56 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-white mb-2">Key to building machine learning models: decision tree</h3>
@@ -309,28 +321,20 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-20 fade-in-section">
+        <section id="contact" class="bg-gray-800 py-20 fade-in-section">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl font-bold text-white mb-4">Let's Connect</h2>
-                <p class="text-gray-400 max-w-2xl mx-auto mb-8">
-                    I am always interested in discussing new projects and opportunities. If you're looking for a data-driven perspective, let's talk about how I can help your business.
-                </p>
-                <a href="mailto:desh_24a12res224@iitp.ac.in" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-4 px-8 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105 text-lg">
-                    Email Me
-                </a>
+                <p class="text-gray-400 max-w-2xl mx-auto mb-8">I am always interested in discussing new projects and opportunities. If you're looking for a data-driven perspective, let's talk about how I can help your business.</p>
+                <a href="mailto:desh_24a12res224@iitp.ac.in" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-4 px-8 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105 text-lg">Email Me</a>
                 <div class="mt-12 flex justify-center space-x-6">
-                    <a href="https://github.com/deepak999-gif" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-200 transition-colors duration-300 group" aria-label="GitHub">
-                        <i class="fab fa-github fa-2x group-hover:text-white"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/desh-deepak-pal-15176b31a" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-200 transition-colors duration-300 group" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin fa-2x group-hover:text-blue-500"></i>
-                    </a>
-                    <a href="https://youtube.com/@deshdeepakpal225?si=TkwfLk3NQdUIxhbF" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-200 transition-colors duration-300 group" aria-label="YouTube">
-                        <i class="fab fa-youtube fa-2x group-hover:text-red-600"></i>
-                    </a>
+                    <a href="https://github.com/deepak999-gif" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300" aria-label="GitHub"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/desh-deepak-pal-15176b31a" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://youtube.com/@deshdeepakpal225?si=TkwfLk3NQdUIxhbF" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300" aria-label="YouTube"><i class="fab fa-youtube fa-2x"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300" aria-label="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
                 </div>
             </div>
         </section>
+
     </main>
 
     <!-- Footer -->
@@ -347,8 +351,6 @@
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-
-        // Close mobile menu when a link is clicked
         const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
         for (let link of mobileMenuLinks) {
             link.addEventListener('click', () => {
@@ -356,21 +358,6 @@
             });
         }
         
-        // Unmute button for video
-        const unmuteButton = document.getElementById('unmute-button');
-        const unmuteIcon = document.getElementById('unmute-icon');
-        const video = document.getElementById('hero-video');
-        unmuteButton.addEventListener('click', () => {
-            video.muted = !video.muted;
-            if (video.muted) {
-                unmuteIcon.classList.remove('fa-volume-up');
-                unmuteIcon.classList.add('fa-volume-mute');
-            } else {
-                unmuteIcon.classList.remove('fa-volume-mute');
-                unmuteIcon.classList.add('fa-volume-up');
-            }
-        });
-
         // Intersection Observer for fade-in animations
         const sections = document.querySelectorAll('.fade-in-section');
         const observer = new IntersectionObserver((entries) => {
@@ -380,14 +367,19 @@
                     observer.unobserve(entry.target);
                 }
             });
-        }, {
-            threshold: 0.1
-        });
+        }, { threshold: 0.1 });
+        sections.forEach(section => { observer.observe(section); });
 
-        sections.forEach(section => {
-            observer.observe(section);
+        // Unmute button for hero video
+        const unmuteButton = document.getElementById('unmute-button');
+        const unmuteIcon = document.getElementById('unmute-icon');
+        const heroVideo = document.getElementById('hero-video');
+        unmuteButton.addEventListener('click', () => {
+            heroVideo.muted = !heroVideo.muted;
+            unmuteIcon.className = heroVideo.muted ? 'fas fa-volume-mute' : 'fas fa-volume-up';
         });
     </script>
 </body>
 </html>
+
 
