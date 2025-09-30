@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desh Deepak Pal - Decision Scientist</title>
-
+    <!-- EDITED: Added IIT Patna for better SEO -->
+    <title>Desh Deepak Pal - Decision Scientist | IIT Patna</title>
+    
     <!-- SEO Meta Tags - Helps Google understand your page -->
-    <meta name="description" content="Personal portfolio for Desh Deepak Pal, a Decision Scientist specializing in data analysis, machine learning, and turning complex data into actionable business strategies.">
-    <meta name="keywords" content="Desh Deepak Pal, Decision Scientist, Data Scientist, Data Analysis, Machine Learning, Business Intelligence, Python, SQL, Portfolio">
+    <meta name="description" content="Personal portfolio for Desh Deepak Pal, a Decision Scientist and IIT Patna graduate, specializing in data analysis and machine learning.">
+    <meta name="keywords" content="Desh Deepak Pal, Decision Scientist, Data Scientist, IIT Patna, Machine Learning, Business Intelligence, Python">
     <!-- End of SEO Meta Tags -->
 
-    <!-- Add your Google Site Verification tag here when you get it -->
+    <!-- Your Google Site Verification tag -->
     <meta name="google-site-verification" content="bvdoYWljfSyrWaIyzsJ1rmN--4OW0XQJVH4-9jVSnCA" />
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,7 +23,6 @@
         body {
             font-family: 'Inter', sans-serif;
         }
-        /* Simple animation for section fade-in */
         .fade-in-section {
             opacity: 0;
             transform: translateY(20px);
@@ -32,105 +32,79 @@
             opacity: 1;
             transform: translateY(0);
         }
-        /* Styles for the background video */
-        .hero-video-container {
+        #hero-video-container {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 0; left: 0; width: 100%; height: 100%;
             overflow: hidden;
-            z-index: 1; /* Behind the content */
+            z-index: -1;
         }
         #hero-video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Cover the entire area */
-        }
-        .hero-content {
-            position: relative;
-            z-index: 2; /* In front of the video */
-        }
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(15, 23, 42, 0.7); /* Dark overlay for text readability */
-            z-index: 1;
+            width: 100%; height: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-200">
 
+    <!-- Header Section -->
     <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-gray-700">
-    <div class="container mx-auto px-6 py-4">
-        <div class="flex items-center justify-between">
-            <div class="text-2xl font-bold text-white">
-                <a href="#">Desh Deepak Pal</a>
-            </div>
-            <nav class="hidden md:flex space-x-6 items-center">
-                <a href="#about" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">About</a>
-                <!-- ADDED THIS LINE -->
-                <a href="#services" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Services</a>
-                <a href="#projects" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Projects</a>
-                <a href="#blog" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Blog</a>
-                <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white py-2 px-4 rounded-lg text-sm font-semibold transition-transform duration-300 hover:scale-105">Contact</a>
-            </nav>
-            <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-white focus:outline-none">
-                    <i class="fas fa-bars fa-lg"></i>
-                </button>
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-white">
+                    <a href="#">Desh Deepak Pal</a>
+                </div>
+                <nav class="hidden md:flex space-x-6 items-center">
+                    <a href="#about" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">About</a>
+                    <a href="#services" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Services</a>
+                    <a href="#projects" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Case Studies</a>
+                    <a href="#talks" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Talks</a>
+                    <a href="#blog" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Blog</a>
+                    <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white py-2 px-4 rounded-lg text-sm font-semibold transition-transform duration-300 hover:scale-105">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-gray-900/90 backdrop-blur-sm">
-        <a href="#about" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">About</a>
-        <!-- ADDED THIS LINE -->
-        <a href="#services" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Services</a>
-        <a href="#projects" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Projects</a>
-        <a href="#blog" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Blog</a>
-        <a href="#contact" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Contact</a>
-    </div>
-</header>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900/90 backdrop-blur-sm">
+            <a href="#about" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">About</a>
+            <a href="#services" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Services</a>
+            <a href="#projects" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Case Studies</a>
+            <a href="#talks" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Talks</a>
+            <a href="#blog" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Blog</a>
+            <a href="#contact" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Contact</a>
+        </div>
+    </header>
 
     <!-- Main Content -->
     <main>
 
         <!-- Hero Section with Video Background -->
-        <section id="home" class="relative flex items-center justify-center h-screen text-center overflow-hidden">
-            <div class="hero-video-container">
-                <!-- Autoplay, loop, muted, and playsinline are required for autoplay in most browsers -->
-                <video id="hero-video" autoplay loop muted playsinline src="background-video.mp4"></video>
-                <div class="hero-overlay"></div>
+        <section id="home" class="relative min-h-screen flex items-center justify-center fade-in-section">
+            <div id="hero-video-container">
+                <video id="hero-video" autoplay loop muted playsinline src="background-video.mp4" class="brightness-50"></video>
             </div>
-            
-            <div class="hero-content container mx-auto px-6 py-16 fade-in-section">
-                <div class="flex flex-col md:flex-row items-center gap-12">
-                    <!-- Image on the left (made narrower) -->
+            <div class="absolute top-0 right-0 bottom-0 left-0"></div>
+            <div class="container mx-auto px-6 py-16 z-10">
+                <div class="flex flex-col md:flex-row items-center gap-8">
                     <div class="md:w-5/12">
-                        <img src="profile.jpeg" alt="Desh Deepak Pal" class="rounded-lg shadow-2xl w-full max-w-md mx-auto" onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/94a3b8?text=Image+of\nDesh+Deepak+Pal';">
+                        <img src="profile.jpeg" alt="Desh Deepak Pal" class="rounded-lg shadow-2xl w-full" onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/94a3b8?text=Image+of\nDesh+Deepak+Pal';">
                     </div>
-                    <!-- Text on the right (made wider) -->
-                    <div class="md:w-7/12">
-                        <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight">
-                            Driving Decisions with Data
-                        </h1>
-                        <p class="text-xl text-cyan-400 mt-2 font-semibold">Desh Deepak Pal - Decision Scientist</p>
+                    <div class="md:w-7/12 text-center bg-gray-800/50 backdrop-blur-sm rounded-lg p-8 md:p-12">
+                        <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight">Driving Decisions with Data</h1>
+                        <!-- EDITED: Added IIT Patna for credibility -->
+                        <p class="text-xl text-cyan-400 mt-2 font-semibold">Desh Deepak Pal - Decision Scientist | IIT Patna</p>
                         <div class="mt-8">
-                            <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105">
-                                Let's Connect
-                            </a>
+                            <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105">Let's Connect</a>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <!-- NEW: Unmute Button -->
-            <button id="unmute-button" class="absolute bottom-5 right-5 z-30 text-white bg-black/40 backdrop-blur-sm p-3 rounded-full hover:bg-black/60 transition-colors focus:outline-none">
-                <i class="fas fa-volume-mute fa-lg"></i>
+            <button id="unmute-button" class="absolute bottom-5 right-5 z-20 bg-gray-800/50 text-white rounded-full w-12 h-12 flex items-center justify-center hover:bg-gray-700/70 transition-colors">
+                <i id="unmute-icon" class="fas fa-volume-mute"></i>
             </button>
         </section>
 
@@ -139,8 +113,9 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center text-white mb-12">About Me</h2>
                 <div class="max-w-3xl mx-auto text-center text-gray-300">
+                    <!-- EDITED: Added IIT Patna to the introduction -->
                     <p class="text-lg mb-6">
-                        Hello! I'm a Decision Scientist passionate about bridging the gap between raw data and strategic business outcomes. I specialize in translating complex datasets into actionable insights that empower organizations to make smarter, more informed decisions.
+                        Hello! I'm a Decision Scientist and a graduate of the Indian Institute of Technology (IIT), Patna, passionate about bridging the gap between raw data and strategic business outcomes. I specialize in translating complex datasets into actionable insights that empower organizations to make smarter, more informed decisions.
                     </p>
                     <p class="text-lg">
                         My goal is to help businesses navigate uncertainty and find opportunities for growth by leveraging statistical analysis, machine learning, and a deep understanding of business context.
@@ -160,62 +135,38 @@
                 </div>
             </div>
         </section>
+        
         <!-- Services & Collaboration Section -->
-<section id="services" class="bg-gray-800 py-20 fade-in-section">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center text-white mb-4">Services & Collaboration</h2>
-        <p class="text-gray-400 max-w-3xl mx-auto text-center mb-12">
-            I help businesses solve complex problems and uncover hidden opportunities through data. If you're looking for a data-driven partner for a specific project, I'm ready to help.
-        </p>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <!-- Service 1 -->
-            <div class="bg-gray-900 p-8 rounded-lg shadow-lg text-center">
-                <div class="mb-4">
-                    <i class="fas fa-users fa-2x text-cyan-400"></i>
+        <section id="services" class="py-20 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-white mb-12">Services & Collaboration</h2>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-gray-800 p-8 rounded-lg">
+                        <i class="fas fa-chart-line fa-3x text-cyan-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Data-Driven Strategy</h3>
+                        <p class="text-gray-400">Helping you uncover opportunities and mitigate risks by analyzing your existing data to inform business strategy.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-lg">
+                        <i class="fas fa-robot fa-3x text-cyan-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Predictive Modeling</h3>
+                        <p class="text-gray-400">Building and implementing machine learning models to forecast trends, predict customer behavior, and automate decisions.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-lg">
+                        <i class="fas fa-comments fa-3x text-cyan-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Team Upskilling</h3>
+                        <p class="text-gray-400">Providing focused workshops and talks to help your team develop a practical, data-first mindset.</p>
+                    </div>
                 </div>
-                <h3 class="text-xl font-bold text-white mb-2">Customer Behavior Analysis</h3>
-                <p class="text-gray-400">
-                    Deep dive into your customer data to understand churn, identify your most valuable segments, and increase retention.
-                </p>
             </div>
-            <!-- Service 2 -->
-            <div class="bg-gray-900 p-8 rounded-lg shadow-lg text-center">
-                <div class="mb-4">
-                    <i class="fas fa-chart-line fa-2x text-cyan-400"></i>
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2">Sales & Marketing Forecasting</h3>
-                <p class="text-gray-400">
-                    Build predictive models to forecast sales, optimize marketing spend, and improve your campaign ROI.
-                </p>
-            </div>
-            <!-- Service 3 -->
-            <div class="bg-gray-900 p-8 rounded-lg shadow-lg text-center">
-                <div class="mb-4">
-                    <i class="fas fa-vial fa-2x text-cyan-400"></i>
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2">A/B Testing & Optimization</h3>
-                <p class="text-gray-400">
-                    Design and analyze experiments to make statistically sound decisions about your products and services.
-                </p>
-            </div>
-        </div>
-        <div class="text-center mt-12">
-            <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105">
-                Discuss a Project
-            </a>
-        </div>
-    </div>
-</section>
+        </section>
 
-
-        <!-- Projects Section -->
-        <section id="projects" class="py-20 fade-in-section">
+        <!-- Projects Section (Renamed to Case Studies) -->
+        <section id="projects" class="bg-gray-800 py-20 fade-in-section">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center text-white mb-12">Case Studies</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                    <!-- Project Card 1: EDIT THIS -->
-                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <!-- Project Card 1 -->
+                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
                         <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Customer+Churn" alt="Customer Churn Prediction" class="w-full h-56 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-white mb-2">Customer Churn Prediction</h3>
@@ -226,9 +177,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Project Card 2: EDIT THIS -->
-                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <!-- Project Card 2 -->
+                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
                         <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Sales+Forecast" alt="Sales Forecast Analysis" class="w-full h-56 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-white mb-2">Sales Forecast Analysis</h3>
@@ -239,9 +189,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Project Card 3: EDIT THIS -->
-                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <!-- Project Card 3 -->
+                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
                         <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Marketing+ROI" alt="Marketing ROI Analysis" class="w-full h-56 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-white mb-2">Marketing Campaign ROI</h3>
@@ -252,19 +201,67 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- My Decision-Making Philosophy Section -->
+        <section id="philosophy" class="py-20 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-white mb-12">My Decision-Making Philosophy</h2>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="p-6">
+                        <div class="text-4xl font-bold text-cyan-400 mb-4">1</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Question First, Data Second</h3>
+                        <p class="text-gray-400">I start by defining the business question, not by exploring the data. A clear objective is the foundation for any meaningful analysis.</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-4xl font-bold text-cyan-400 mb-4">2</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Simplicity Over Complexity</h3>
+                        <p class="text-gray-400">A simple, understandable model that is used is always better than a complex, perfect model that is ignored. Clarity is key.</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-4xl font-bold text-cyan-400 mb-4">3</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Action is the Goal</h3>
+                        <p class="text-gray-400">My work isn't finished until the insights have been translated into a concrete business action. The final deliverable is a decision, not a report.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Complimentary Talk Section -->
+        <section id="talks" class="bg-gray-800 py-20 fade-in-section">
+            <div class="container mx-auto px-6">
+                <div class="bg-gray-900 rounded-lg shadow-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-2/3 text-center md:text-left">
+                        <h2 class="text-3xl font-bold text-white mb-4">Shareable Insights: A Complimentary Talk for Your Team</h2>
+                        <p class="text-gray-400 mb-6">
+                            I believe the best way to demonstrate value is to share it. I offer a complimentary 60-minute in-person talk for tech, data, or learning teams in the Prayagraj area and major nearby cities. For companies located elsewhere, this can be conducted virtually.
+                        </p>
+                        <h4 class="text-xl font-semibold text-white mb-3">Potential Topics Include:</h4>
+                        <ul class="list-none text-gray-400 space-y-2 mb-8">
+                            <li><i class="fas fa-check-circle text-cyan-400 mr-2"></i>From Data to Decision: A Practical Framework</li>
+                            <li><i class="fas fa-check-circle text-cyan-400 mr-2"></i>The 'Why' Before the 'How': Strategy in Machine Learning</li>
+                            <li><i class="fas fa-check-circle text-cyan-400 mr-2"></i>Communicating Complex Insights to Business Leaders</li>
+                        </ul>
+                        <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105">
+                            Enquire About a Talk
+                        </a>
+                    </div>
+                    <div class="md:w-1/3 flex justify-center">
+                        <i class="fas fa-microphone-alt fa-6x text-gray-700"></i>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Blog Section -->
-        <section id="blog" class="bg-gray-800 py-20 fade-in-section">
+        <section id="blog" class="py-20 fade-in-section">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center text-white mb-12">Latest Articles & Thoughts</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                    <!-- Blog Post 1: EDIT THIS -->
-                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <!-- Blog Post 1 -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
                         <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Blog+Post+One" alt="Blog Post 1" class="w-full h-56 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-white mb-2">Core Intuition And Mathematical Derivation Of Decision Trees</h3>
@@ -272,9 +269,8 @@
                             <a href="https://medium.com/@desh_24a12res224/decision-trees-dividing-data-into-regions-947c9b82d142" class="text-cyan-400 hover:text-cyan-300 font-semibold">Read More &rarr;</a>
                         </div>
                     </div>
-
-                    <!-- Blog Post 2: EDIT THIS -->
-                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <!-- Blog Post 2 -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
                         <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Blog+Post+Two" alt="Blog Post 2" class="w-full h-56 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-white mb-2">A Beginner's Guide to A/B Testing</h3>
@@ -282,9 +278,8 @@
                             <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">Read More &rarr;</a>
                         </div>
                     </div>
-
-                    <!-- Blog Post 3: EDIT THIS -->
-                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <!-- Blog Post 3 -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
                         <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Blog+Post+Three" alt="Blog Post 3" class="w-full h-56 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-white mb-2">Key to building machine learning models: decision tree</h3>
@@ -292,13 +287,12 @@
                             <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">Read More &rarr;</a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-20 fade-in-section">
+        <section id="contact" class="bg-gray-800 py-20 fade-in-section">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl font-bold text-white mb-4">Let's Connect</h2>
                 <p class="text-gray-400 max-w-2xl mx-auto mb-8">
@@ -308,11 +302,10 @@
                     Email Me
                 </a>
                 <div class="mt-12 flex justify-center space-x-6">
-                    <!-- UPDATED: Added brand colors on hover for each icon -->
-                    <a href="https://github.com/deepak999-gif" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="GitHub"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://github.com/deepak999-gif" class="text-gray-400 hover:text-gray-200 transition-colors duration-300" aria-label="GitHub"><i class="fab fa-github fa-2x"></i></a>
                     <a href="https://www.linkedin.com/in/desh-deepak-pal-15176b31a" class="text-gray-400 hover:text-blue-500 transition-colors duration-300" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
-                    <a href="https://youtube.com/@deshdeepakpal225?si=TkwfLk3NQdUIxhbF" class="text-gray-400 hover:text-red-600 transition-colors duration-300" aria-label="YouTube"><i class="fab fa-youtube fa-2x"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300" aria-label="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="https://youtube.com/@deshdeepakpal225?si=TkwfLk3NQdUIxhbF" class="text-gray-400 hover:text-red-500 transition-colors duration-300" aria-label="YouTube"><i class="fab fa-youtube fa-2x"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300" aria-label="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
                 </div>
             </div>
         </section>
@@ -333,8 +326,6 @@
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-
-        // Close mobile menu when a link is clicked
         const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
         for (let link of mobileMenuLinks) {
             link.addEventListener('click', () => {
@@ -351,32 +342,26 @@
                     observer.unobserve(entry.target);
                 }
             });
-        }, {
-            threshold: 0.1
-        });
-
+        }, { threshold: 0.1 });
         sections.forEach(section => {
             observer.observe(section);
         });
 
-        // NEW: Unmute button functionality
-        const video = document.getElementById('hero-video');
+        // Video unmute button
         const unmuteButton = document.getElementById('unmute-button');
-        if (unmuteButton && video) {
-            const unmuteIcon = unmuteButton.querySelector('i');
-            
-            unmuteButton.addEventListener('click', () => {
-                if (video.muted) {
-                    video.muted = false;
-                    unmuteIcon.classList.remove('fa-volume-mute');
-                    unmuteIcon.classList.add('fa-volume-up');
-                } else {
-                    video.muted = true;
-                    unmuteIcon.classList.remove('fa-volume-up');
-                    unmuteIcon.classList.add('fa-volume-mute');
-                }
-            });
-        }
+        const unmuteIcon = document.getElementById('unmute-icon');
+        const video = document.getElementById('hero-video');
+        unmuteButton.addEventListener('click', () => {
+            video.muted = !video.muted;
+            if (video.muted) {
+                unmuteIcon.classList.remove('fa-volume-up');
+                unmuteIcon.classList.add('fa-volume-mute');
+            } else {
+                unmuteIcon.classList.remove('fa-volume-mute');
+                unmuteIcon.classList.add('fa-volume-up');
+            }
+        });
     </script>
 </body>
 </html>
+
