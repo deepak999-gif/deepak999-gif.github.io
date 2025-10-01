@@ -104,7 +104,7 @@
                         <p class="text-xl text-cyan-400 mt-4 font-semibold">Desh Deepak Pal - Decision Scientist, IIT Patna</p>
                         <p class="mt-4 text-gray-300 max-w-lg mx-auto">Desh help businesses translate data into profit by bridging the gap between your tech team and your stakeholders.</p>
                         <div class="mt-8">
-                            <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105">Start a Conversation</a>
+                            <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105">Request Invitation</a>
                         </div>
                     </div>
                 </div>
@@ -310,40 +310,56 @@
     }
 </style>
 
+
+<style>
+    .glimpse-container {
+        position: relative;
+        width: 100%;
+        padding-top: 177.77%; /* This creates a 9:16 aspect ratio for vertical videos */
+    }
+    .glimpse-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This prevents the video from being stretched or squashed */
+    }
+</style>
+
 <!-- Glimpses Section -->
 <section id="glimpses" class="py-20 fade-in-section">
     <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold text-center text-white mb-12">Glimpses of My Talks</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-            <!-- Glimpse 1 (Muted Autoplay) -->
+            <!-- Glimpse 1 (Always Muted Autoplay) -->
             <div class="bg-gray-800 rounded-lg p-4 flex flex-col">
                 <div class="glimpse-container rounded-lg overflow-hidden">
                     <video autoplay loop muted playsinline src="glimpse1.mp4"></video>
                 </div>
-                <!-- ADDED: Caption for Glimpse 1 -->
                 <div class="mt-4 text-center">
                     <p class="text-sm text-gray-400">“Spoke at a Data Science Community Meetup with 80+ attendees... Topic: ‘Decision Science for Startups.’ The talk received a 4.8/5 feedback score...”</p>
                 </div>
             </div>
 
-            <!-- Glimpse 2 (Standard with controls) -->
+            <!-- Glimpse 2 (Autoplays muted, but with controls to unmute) -->
             <div class="bg-gray-800 rounded-lg p-4 flex flex-col">
                 <div class="glimpse-container rounded-lg overflow-hidden">
-                    <video controls src="glimpse2.mp4"></video>
+                    <!-- EDITED: Added autoplay, muted, and loop attributes -->
+                    <video controls autoplay muted loop playsinline src="glimpse2.mp4"></video>
                 </div>
-                <!-- ADDED: Caption for Glimpse 2 -->
                 <div class="mt-4 text-center">
                     <p class="text-sm text-gray-400">“Project Presentation: AI-Powered Animal Crossing Alert System — Led a team of 5... Presented to faculty and peers, recognized as one of the most innovative projects of the batch.”</p>
                 </div>
             </div>
 
-            <!-- Glimpse 3 (Standard with controls) -->
+            <!-- Glimpse 3 (Autoplays muted, but with controls to unmute) -->
             <div class="bg-gray-800 rounded-lg p-4 flex flex-col">
                 <div class="glimpse-container rounded-lg overflow-hidden">
-                    <video controls src="glimpse3.mp4"></video>
+                    <!-- EDITED: Added autoplay, muted, and loop attributes -->
+                    <video controls autoplay muted loop playsinline src="glimpse3.mp4"></video>
                 </div>
-                <!-- ADDED: Caption for Glimpse 3 -->
                 <div class="mt-4 text-center">
                     <p class="text-sm text-gray-400">“Delivered a guest lecture at IIT Patna for 120+ MBA and CS students on how businesses can turn raw data into profitable decisions.”</p>
                 </div>
