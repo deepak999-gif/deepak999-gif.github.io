@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Primary Meta Tags -->
+    <!-- SEO Meta Tags -->
     <title>Desh Deepak Pal - Decision Scientist | IIT Patna</title>
     <meta name="description" content="Personal portfolio for Desh Deepak Pal, a Decision Scientist from IIT Patna specializing in data analysis, machine learning, and business strategy. I help businesses turn data into profit.">
-    <meta name="keywords" content="Desh Deepak Pal, Decision Scientist, Data Scientist, Data Analysis, Machine Learning, Business Intelligence, Python, SQL, IIT Patna">
-    
+    <meta name="keywords" content="Desh Deepak Pal, Decision Scientist, Data Scientist, Data Analysis, Machine Learning, Business Intelligence, Python, SQL, IIT Patna, Deep Learning, AI">
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="Desh Deepak Pal - Decision Scientist | IIT Patna">
     <meta property="og:description" content="I help businesses translate data into profit by bridging the gap between your tech team and your stakeholders.">
     <meta property="og:image" content="https://deepak999-gif.github.io/profile.jpeg">
     <meta property="og:url" content="https://deepak999-gif.github.io">
-    
     <!-- Google Site Verification Tag -->
     <meta name="google-site-verification" content="bvdoYWljfSyrWaIyzsJ1rmN--4OW0XQJVH4-9jVSnCA" />
 
@@ -23,49 +20,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Corrected and necessary styles -->
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .fade-in-section {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-        .fade-in-section.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        /* Styles for the background video */
-        #hero-video-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: -1; /* This is crucial to keep the video in the back */
-        }
-        #hero-video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* This makes the video cover the area without distortion */
-        }
-        .glimpse-container {
-            position: relative;
-            width: 100%;
-            padding-top: 177.77%; /* 9:16 aspect ratio */
-        }
-        .glimpse-container video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+        body { font-family: 'Inter', sans-serif; }
+        .fade-in-section { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .fade-in-section.is-visible { opacity: 1; transform: translateY(0); }
+        #hero-video-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: -1; }
+        #hero-video { width: 100%; height: 100%; object-fit: cover; }
+        .glimpse-container { position: relative; width: 100%; padding-top: 177.77%; }
+        .glimpse-container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-200">
@@ -79,9 +41,9 @@
                 </div>
                 <nav class="hidden md:flex space-x-4 items-center text-sm">
                     <a href="#about" class="text-gray-300 hover:text-cyan-400">About</a>
+                    <a href="#problems-solved" class="text-gray-300 hover:text-cyan-400">Problems I Solve</a>
                     <a href="#services" class="text-gray-300 hover:text-cyan-400">Services</a>
                     <a href="#case-studies" class="text-gray-300 hover:text-cyan-400">Case Studies</a>
-                    <a href="#philosophy" class="text-gray-300 hover:text-cyan-400">Philosophy</a>
                     <a href="#glimpses" class="text-gray-300 hover:text-cyan-400">Glimpses</a>
                     <a href="#talks" class="text-gray-300 hover:text-cyan-400">Talks</a>
                     <a href="#blog" class="text-gray-300 hover:text-cyan-400">Blog</a>
@@ -92,61 +54,51 @@
                 </div>
             </div>
         </div>
+        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-gray-900/90">
-            <a href="#about" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">About</a>
-            <a href="#services" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Services</a>
-            <a href="#case-studies" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Case Studies</a>
-            <a href="#philosophy" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Philosophy</a>
-            <a href="#glimpses" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Glimpses</a>
-            <a href="#talks" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Talks</a>
-            <a href="#blog" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Blog</a>
-            <a href="#contact" class="block text-center py-3 px-4 text-sm text-gray-200 hover:bg-gray-700">Contact</a>
+            <a href="#about" class="block text-center py-3 px-4 text-sm hover:bg-gray-700">About</a>
+            <a href="#problems-solved" class="block text-center py-3 px-4 text-sm hover:bg-gray-700">Problems I Solve</a>
+            <a href="#services" class="block text-center py-3 px-4 text-sm hover:bg-gray-700">Services</a>
+            <a href="#case-studies" class="block text-center py-3 px-4 text-sm hover:bg-gray-700">Case Studies</a>
+            <a href="#glimpses" class="block text-center py-3 px-4 text-sm hover:bg-gray-700">Glimpses</a>
+            <a href="#talks" class="block text-center py-3 px-4 text-sm hover:bg-gray-700">Talks</a>
+            <a href="#blog" class="block text-center py-3 px-4 text-sm hover:bg-gray-700">Blog</a>
+            <a href="#contact" class="block text-center py-3 px-4 text-sm hover:bg-gray-700">Contact</a>
         </div>
     </header>
 
     <!-- Main Content -->
     <main>
 
-        !-- Hero Section with Video Background -->
-<section id="home" class="relative min-h-screen flex items-center justify-center fade-in-section">
-    <div id="hero-video-container">
-        <video id="hero-video" autoplay loop muted playsinline src="background-video.mp4" class="brightness-50"></video>
-    </div>
-    <div class="relative z-10 container mx-auto px-6 py-16">
-        <div class="flex flex-col md:flex-row items-center gap-8">
-            <div class="md:w-5/12">
-                <img src="profile.jpeg" alt="Desh Deepak Pal" class="rounded-lg shadow-2xl w-full" onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e2b3c/94a3b8?text=Image+of\nDesh+Deepak+Pal';">
+        <!-- Hero Section with Video Background -->
+        <section id="home" class="relative min-h-screen flex items-center justify-center fade-in-section">
+            <div id="hero-video-container">
+                <video id="hero-video" autoplay loop muted playsinline src="background-video.mp4" class="brightness-50"></video>
             </div>
-            <div class="md:w-7/12 text-center bg-gray-800/50 backdrop-blur-sm rounded-lg p-8 md:p-12">
-                
-                <!-- EDITED: Redesigned the tagline with a 3D/shaded effect and new colors -->
-                <div class="flex items-center justify-center space-x-4 mb-6">
-                    <span class="text-3xl text-red-500 font-semibold tracking-wider drop-shadow-lg">CONFUSION</span>
-                    <svg class="w-10 h-10 text-cyan-400 filter drop-shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                    <span class="text-3xl text-cyan-400 font-bold tracking-wider drop-shadow-lg">CLARITY</span>
-                </div>
-
-                <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight">
-                    You Have the Data. You Have the Team. Let's Build the Strategy.
-                </h1>
-                <p class="text-xl text-gray-300 mt-4 font-semibold">Desh Deepak Pal - Decision Scientist, IIT Patna</p>
-                <div class="mt-8">
-                    <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105">
-                        Request Invitation
-                    </a>
+            <div class="relative z-10 container mx-auto px-6 py-16">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-5/12">
+                        <img src="profile.jpeg" alt="Desh Deepak Pal" class="rounded-lg shadow-2xl w-full" onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e2b3c/94a3b8?text=Image+of\nDesh+Deepak+Pal';">
+                    </div>
+                    <div class="md:w-7/12 text-center bg-gray-800/50 backdrop-blur-sm rounded-lg p-8 md:p-12">
+                        <div class="flex items-center justify-center space-x-4 mb-6">
+                            <span class="text-3xl text-red-500 font-semibold tracking-wider drop-shadow-lg">CONFUSION</span>
+                            <svg class="w-10 h-10 text-cyan-400 filter drop-shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            <span class="text-3xl text-cyan-400 font-bold tracking-wider drop-shadow-lg">CLARITY</span>
+                        </div>
+                        <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight">You Have the Data. You Have the Team. Let's Build the Strategy.</h1>
+                        <p class="text-xl text-gray-300 mt-4 font-semibold">Desh Deepak Pal - Decision Scientist, IIT Patna</p>
+                        <div class="mt-8">
+                            <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105">Request Invitation</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <button id="unmute-button" class="absolute bottom-5 right-5 z-20 bg-gray-800/50 text-white rounded-full w-12 h-12 flex items-center justify-center hover:bg-gray-700/70">
-        <i id="unmute-icon" class="fas fa-volume-mute"></i>
-    </button>
-</section>
+            <button id="unmute-button" class="absolute bottom-5 right-5 z-20 bg-gray-800/50 text-white rounded-full w-12 h-12 flex items-center justify-center hover:bg-gray-700/70"><i id="unmute-icon" class="fas fa-volume-mute"></i></button>
+        </section>
 
-
-        <!-- The rest of your sections remain the same -->
         <!-- About Me Section -->
-        <section id="about" class="bg-gray-800 py-20 fade-in-section">
+        <section id="about" class="py-20 fade-in-section">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center text-white mb-12">My Role as Your Strategic Partner</h2>
                 <div class="max-w-3xl mx-auto text-center text-gray-300">
@@ -171,28 +123,51 @@
             </div>
         </section>
 
+        <!-- The Problems I Solve Section -->
+        <section id="problems-solved" class="bg-gray-800 py-20 fade-in-section">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-white mb-4">The Problems I Solve</h2>
+                <p class="text-lg text-gray-400 mb-12 max-w-3xl mx-auto">My entire practice is built on one core mission: guiding your organization from a state of data confusion to one of strategic clarity and profitable action.</p>
+                <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <div class="bg-gray-900 p-8 rounded-lg">
+                        <i class="fas fa-compass fa-3x text-cyan-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">The Strategy Gap</h3>
+                        <p class="text-gray-400">Your tech team is brilliant, but are they working on the most profitable problems? I work with your leaders to define the right business questions *before* a single line of code is written.</p>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-lg">
+                        <i class="fas fa-rocket fa-3x text-cyan-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">The Implementation Gap</h3>
+                        <p class="text-gray-400">A working model isn't a business solution. I help your team bridge the gap between a finished model and a fully integrated system that drives daily operations and growth.</p>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-lg">
+                        <i class="fas fa-bullseye fa-3x text-cyan-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">The Decision Gap</h3>
+                        <p class="text-gray-400">Your models produce numbers, but you need confident decisions. I translate complex technical findings into a clear, simple story that empowers your stakeholders to act decisively.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Services & Collaboration Section -->
         <section id="services" class="py-20 fade-in-section">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center text-white mb-2">Services & Collaboration</h2>
-                <p class="text-lg text-center text-gray-400 mb-12 max-w-3xl mx-auto">I help businesses solve complex problems and uncover opportunities through data. Here’s how we can work together:</p>
+                <p class="text-lg text-center text-gray-400 mb-12 max-w-3xl mx-auto">Here’s how we can work together to turn your data into a strategic asset:</p>
                 <div class="grid md:grid-cols-3 gap-8 text-center max-w-5xl mx-auto">
                     <div class="bg-gray-800 p-8 rounded-lg">
                         <i class="fas fa-chart-line fa-3x text-cyan-400 mb-4"></i>
-                        <h3 class="text-xl font-bold text-white mb-2">Decision Advising</h3>
-                        <p class="text-gray-400">Let’s help you improve your decision-making at any scale, 
-                            whether you want to untangle daily dilemmas, improve your life and career, optimize your organization, 
-                            or build AI / data-driven systems!</p>
+                        <h3 class="text-xl font-bold text-white mb-2">Data Strategy Consulting</h3>
+                        <p class="text-gray-400">Defining the right questions and creating a roadmap for data-driven growth.</p>
                     </div>
                     <div class="bg-gray-800 p-8 rounded-lg">
                         <i class="fas fa-cogs fa-3x text-cyan-400 mb-4"></i>
                         <h3 class="text-xl font-bold text-white mb-2">Model Implementation & Review</h3>
-                        <p class="text-gray-400">Working with your tech team to translate business needs into technical specifications and ensure models are built for impact.</p>
+                        <p class="text-gray-400">Working with your tech team to ensure models are built for maximum business impact.</p>
                     </div>
                     <div class="bg-gray-800 p-8 rounded-lg">
                         <i class="fas fa-users fa-3x text-cyan-400 mb-4"></i>
                         <h3 class="text-xl font-bold text-white mb-2">Stakeholder Communication</h3>
-                        <p class="text-gray-400">Translating complex findings into clear, concise stories that business leaders can use to make confident decisions.</p>
+                        <p class="text-gray-400">Translating complex findings into clear stories that drive confident decisions.</p>
                     </div>
                 </div>
             </div>
@@ -236,7 +211,7 @@
                         <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Customer+Churn" alt="Customer Churn Prediction" class="w-full h-56 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-white mb-2">Customer Churn Prediction</h3>
-                            <p class="text-gray-400 mb-4">Developed a model to predict customer churn, enabling proactive retention strategies and reducing attrition by 15%.</p>
+                            <p class="text-gray-400 mb-4">Developed a model to predict customer churn, enabling proactive retention strategies.</p>
                             <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">Read Case Study &rarr;</a>
                         </div>
                     </div>
@@ -244,7 +219,7 @@
                         <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Sales+Forecast" alt="Sales Forecast Analysis" class="w-full h-56 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-white mb-2">Sales Forecast Analysis</h3>
-                            <p class="text-gray-400 mb-4">Analyzed historical sales data to create a predictive model, improving inventory management and forecast accuracy.</p>
+                            <p class="text-gray-400 mb-4">Created a predictive model to improve inventory management and forecast accuracy.</p>
                             <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">Read Case Study &rarr;</a>
                         </div>
                     </div>
@@ -252,39 +227,9 @@
                         <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Marketing+ROI" alt="Marketing ROI Analysis" class="w-full h-56 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-white mb-2">Marketing Campaign ROI</h3>
-                            <p class="text-gray-400 mb-4">Built a dashboard to measure marketing effectiveness, helping to optimize ad spend and increase campaign ROI.</p>
+                            <p class="text-gray-400 mb-4">Built a dashboard to measure marketing effectiveness and optimize ad spend.</p>
                             <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">Read Case Study &rarr;</a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- My Decision-Making Philosophy Section -->
-        <section id="philosophy" class="bg-gray-800 py-20 fade-in-section">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold text-white mb-12">My Decision-Making Philosophy</h2>
-                <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                    <div class="flex flex-col items-center">
-                        <div class="bg-gray-900 rounded-full w-24 h-24 flex items-center justify-center border-4 border-cyan-400">
-                            <span class="text-3xl font-bold text-cyan-400">1</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mt-6 mb-2">Clarity Over Complexity</h3>
-                        <p class="text-gray-400">The goal is not to build the most complex model, but to find the simplest path to a clear, actionable insight.</p>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div class="bg-gray-900 rounded-full w-24 h-24 flex items-center justify-center border-4 border-cyan-400">
-                            <span class="text-3xl font-bold text-cyan-400">2</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mt-6 mb-2">Strategy Before Science</h3>
-                        <p class="text-gray-400">We start with the business objective, not the data. The strategy dictates the analysis, not the other way around.</p>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div class="bg-gray-900 rounded-full w-24 h-24 flex items-center justify-center border-4 border-cyan-400">
-                            <span class="text-3xl font-bold text-cyan-400">3</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mt-6 mb-2">Action, Not Just Analysis</h3>
-                        <p class="text-gray-400">An insight is only valuable if it leads to a decision. My work ends not with a report, but with a recommended action.</p>
                     </div>
                 </div>
             </div>
@@ -322,12 +267,12 @@
                 </div>
             </div>
         </section>
-
+        
         <!-- Complimentary Talk Section -->
         <section id="talks" class="bg-gray-800 py-20 fade-in-section">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl font-bold text-white mb-4">Shareable Insights: A Complimentary Talk for Your Team</h2>
-                <p class="text-lg text-gray-400 mb-8 max-w-3xl mx-auto">I offer a complimentary 60-minute session for businesses titled "From Data to Decision: A Practical Framework." It's a non-promotional, educational talk designed to provide immediate value to your tech, data, or leadership teams. In-person for local companies, virtual for all.</p>
+                <p class="text-lg text-gray-400 mb-8 max-w-3xl mx-auto">I offer a complimentary 60-minute session for businesses titled "From Data to Decision: A Practical Framework." It's an educational talk designed to provide immediate value to your teams. In-person for local companies, virtual for all.</p>
                 <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg">Inquire About a Talk</a>
             </div>
         </section>
@@ -372,10 +317,10 @@
                 <p class="text-gray-400 max-w-2xl mx-auto mb-8">I am always interested in discussing new projects and opportunities. If you're looking for a data-driven perspective, let's talk about how I can help your business.</p>
                 <a href="mailto:desh_24a12res224@iitp.ac.in" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-4 px-8 rounded-lg">Email Me</a>
                 <div class="mt-12 flex justify-center space-x-6">
-                    <a href="https://github.com/deepak999-gif" class="text-gray-400 hover:text-cyan-400" aria-label="GitHub"><i class="fab fa-github fa-2x"></i></a>
-                    <a href="https://www.linkedin.com/in/desh-deepak-pal-15176b31a" class="text-gray-400 hover:text-cyan-400" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
-                    <a href="https://youtube.com/@deshdeepakpal225?si=TkwfLk3NQdUIxhbF" class="text-gray-400 hover:text-cyan-400" aria-label="YouTube"><i class="fab fa-youtube fa-2x"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-cyan-400" aria-label="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="https://github.com/deepak999-gif" class="text-gray-400 hover:text-cyan-400"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/desh-deepak-pal-15176b31a" class="text-gray-400 hover:text-cyan-400"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://youtube.com/@deshdeepakpal225?si=TkwfLk3NQdUIxhbF" class="text-gray-400 hover:text-cyan-400"><i class="fab fa-youtube fa-2x"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-cyan-400"><i class="fab fa-twitter fa-2x"></i></a>
                 </div>
             </div>
         </section>
@@ -390,20 +335,12 @@
     </footer>
 
     <script>
-        // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+        mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
         const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
-        for (let link of mobileMenuLinks) {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        }
+        for (let link of mobileMenuLinks) { link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); }); }
         
-        // Intersection Observer for fade-in animations
         const sections = document.querySelectorAll('.fade-in-section');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -415,7 +352,6 @@
         }, { threshold: 0.1 });
         sections.forEach(section => { observer.observe(section); });
 
-        // Unmute button for hero video
         const unmuteButton = document.getElementById('unmute-button');
         const unmuteIcon = document.getElementById('unmute-icon');
         const heroVideo = document.getElementById('hero-video');
@@ -426,4 +362,6 @@
     </script>
 </body>
 </html>
+
+
 
