@@ -72,32 +72,46 @@
     <!-- Main Content -->
     <main>
 
+        
         <!-- Hero Section with Video Background -->
-        <section id="home" class="relative min-h-screen flex items-center justify-center fade-in-section">
-            <div id="hero-video-container">
-                <video id="hero-video" autoplay loop muted playsinline src="background-video.mp4" class="brightness-50"></video>
+<section id="home" class="relative min-h-screen flex items-center justify-center fade-in-section">
+    <div id="hero-video-container">
+        <video id="hero-video" autoplay loop muted playsinline src="background-video.mp4" class="brightness-50"></video>
+    </div>
+    <div class="relative z-10 container mx-auto px-6 py-16">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-5/12">
+                <img src="profile.jpeg" alt="Desh Deepak Pal" class="rounded-lg shadow-2xl w-full" onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e2b3c/94a3b8?text=Image+of\nDesh+Deepak+Pal';">
             </div>
-            <div class="relative z-10 container mx-auto px-6 py-16">
-                <div class="flex flex-col md:flex-row items-center gap-8">
-                    <div class="md:w-5/12">
-                        <img src="profile.jpeg" alt="Desh Deepak Pal" class="rounded-lg shadow-2xl w-full" onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e2b3c/94a3b8?text=Image+of\nDesh+Deepak+Pal';">
-                    </div>
-                    <div class="md:w-7/12 text-center bg-gray-800/50 backdrop-blur-sm rounded-lg p-8 md:p-12">
-                        <div class="flex items-center justify-center space-x-4 mb-6">
-                            <span class="text-3xl text-red-500 font-semibold tracking-wider drop-shadow-lg">CONFUSION</span>
-                            <svg class="w-10 h-10 text-cyan-400 filter drop-shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                            <span class="text-3xl text-cyan-400 font-bold tracking-wider drop-shadow-lg">CLARITY</span>
-                        </div>
-                        <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight">You Have the Data. You Have the Team. Let's Build the Strategy.</h1>
-                        <p class="text-xl text-gray-300 mt-4 font-semibold">Desh Deepak Pal - Decision Scientist, IIT Patna</p>
-                        <div class="mt-8">
-                            <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105">Request Invitation</a>
-                        </div>
-                    </div>
+            <div class="md:w-7/12 text-center bg-gray-800/50 backdrop-blur-sm rounded-lg p-8 md:p-12">
+                
+                <div class="flex items-center justify-center space-x-4 mb-6">
+                    <span class="text-3xl text-red-500 font-semibold tracking-wider drop-shadow-lg">CONFUSION</span>
+                    <svg class="w-10 h-10 text-cyan-400 filter drop-shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    <span class="text-3xl text-cyan-400 font-bold tracking-wider drop-shadow-lg">CLARITY</span>
+                </div>
+
+                <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight">
+                    You Have the Data. You Have the Team. Let's Build the Strategy for Growth.
+                </h1>
+                
+                <!-- EDITED: This new text explicitly states the aspirational identity -->
+                <p class="text-xl text-gray-300 mt-4 font-semibold">I help established startups turn their data into a predictable engine for **Growth.**</p>
+                <p class="mt-2 text-gray-400">Desh Deepak Pal - Decision Scientist, IIT Patna</p>
+
+                <div class="mt-8">
+                    <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 inline-block transform hover:scale-105">
+                        Request Invitation
+                    </a>
                 </div>
             </div>
-            <button id="unmute-button" class="absolute bottom-5 right-5 z-20 bg-gray-800/50 text-white rounded-full w-12 h-12 flex items-center justify-center hover:bg-gray-700/70"><i id="unmute-icon" class="fas fa-volume-mute"></i></button>
-        </section>
+        </div>
+    </div>
+    <button id="unmute-button" class="absolute bottom-5 right-5 z-20 bg-gray-800/50 text-white rounded-full w-12 h-12 flex items-center justify-center hover:bg-gray-700/70">
+        <i id="unmute-icon" class="fas fa-volume-mute"></i>
+    </button>
+</section>
+
 
         <!-- About Me Section -->
         <section id="about" class="py-20 fade-in-section">
